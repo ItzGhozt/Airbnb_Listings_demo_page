@@ -19,10 +19,45 @@
   
 
 <main>
-    <div id="lisitngs"></div>
+    <div id="listings"></div>
 </main>
 
+  <footer>
+        <p>Data from Airbnb SF</p>
+    </footer>
 
+    <script src="main.js"></script>
+
+  <!-- This is a template for a single card listing -->
+    <!-- This is invisible on the page, we will clone it 50 times in JavaScript later -->
+         <!-- This is so we can keep everything in it's own page -->
+            <template id="listing-template">
+        <div class="listing-card">
+            <!-- Listing Image -->
+            <img class="listing-image" alt="Listing photo">
+            
+            <!-- Listing Info -->
+            <div class="listing-info">
+                <h2 class="listing-name"></h2>
+                <p class="listing-price"></p>
+                
+                <!-- Host Info -->
+                <div class="host-info">
+                    <img class="host-photo" alt="Host photo">
+                    <span class="host-name"></span>
+                </div>
+                
+                <!-- Description -->
+                <p class="listing-description"></p>
+                
+                <!-- Amenities -->
+                <div class="amenities">
+                    <strong>Amenities:</strong> 
+                    <span class="amenities-list"></span>
+                </div>
+            </div>
+        </div>
+    </template>
 
 
 
