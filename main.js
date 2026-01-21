@@ -48,6 +48,7 @@ function createListingCard(listing, template) {
     card.querySelector('.listing-price').textContent = listing.price + ' / night';
     
     // Fill in host photo
+    card.querySelector('.view-btn').href = listing.listing_url;
     card.querySelector('.host-photo').src = listing.host_thumbnail_url;
     card.querySelector('.host-photo').alt = listing.host_name;
     
