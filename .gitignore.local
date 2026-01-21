@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+# Node.js
+node_modules/
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Large files
+*.pdf
+*.mov
+*.mp4
+*.zip
+EOF
